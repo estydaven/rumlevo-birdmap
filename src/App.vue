@@ -49,7 +49,26 @@ async function refreshGrid() {
 }
 
 onMounted(async () => {
-  map = L.map('map').setView([53.660399, 23.858360], 16)
+  //map = L.map('map').setView([53.660399, 23.858360], 16)
+  map = L.map('map')
+
+navigator.geolocation.getCurrentPosition(
+  (position) => {
+    const lat = position.coords.latitude
+    const lng = position.coords.longitude
+    map.setView([lat, lng], 16)
+
+    L.marker([lat, lng])
+      .addTo(map)
+      .bindPopup('Вы здесь 🐾')
+      .openPopup()
+  },
+  (error) => {
+    console.error('Ошибка геолокации:', error)
+    map.setView([53.660399, 23.858360], 16)
+  }
+)
+
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '© OpenStreetMap',
