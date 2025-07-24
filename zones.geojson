@@ -1,0 +1,13 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "Зона 1", "id": "zone_1" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[30.308, 53.911], [30.310, 53.911], [30.310, 53.913], [30.308, 53.913], [30.308, 53.911]]]
+      }
+    }
+  ]
+}
