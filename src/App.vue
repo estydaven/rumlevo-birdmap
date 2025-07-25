@@ -58,7 +58,16 @@ onMounted(async () => {
         shadowUrl: markerShadow
     })
 
-    map = L.map('map').setView([53.660399, 23.858360], 16) // дефолтный центр и зум 16
+    const userIcon = new L.Icon({
+        iconUrl: markerIcon,
+        shadowUrl: markerShadow,
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34],
+        shadowSize: [41, 41],
+    });
+
+    map = L.map('map').setView([53.660399, 23.858360], 16)
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
@@ -68,8 +77,8 @@ onMounted(async () => {
     map.locate()
 
     map.on('locationfound', (e) => {
-        map.setView(e.latlng, 17)  // явное приближение
-        L.marker(e.latlng)
+        map.setView(e.latlng, 17)
+        L.marker(e.latlng, { icon: userIcon })
             .addTo(map)
             .bindPopup('Вы здесь 🐾')
             .openPopup()
