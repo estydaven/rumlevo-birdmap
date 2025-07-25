@@ -72,9 +72,19 @@ onMounted(async () => {
     attribution: '© OpenStreetMap',
   }).addTo(map)
 
-  birdData = await loadFromStore('birds', 'bird-probs') ||
-             await loadFromStore('birds', 'bird-probabilities.json') ||
-             {}
+birdData = await loadFromStore('birds', 'bird-probs')
+
+if (!birdData) {
+  try {
+    const res = await fetch(import.meta.env.BASE_URL + 'bird-probabilities.json?v=' + Date.now())
+    birdData = await res.json()
+    await saveToStore('birds', 'bird-probs', birdData)
+    console.log('Сохранили birdData в IndexedDB:', birdData)
+  } catch (error) {
+    console.error('Не удалось загрузить bird-probabilities.json:', error)
+    birdData = {}
+  }
+}
 
   await refreshGrid()
 })
