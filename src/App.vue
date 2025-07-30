@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 import markerIcon from 'leaflet/dist/images/marker-icon.png'
 import markerShadow from 'leaflet/dist/images/marker-shadow.png'
 import L from 'leaflet'
@@ -104,17 +104,23 @@ onMounted(async () => {
 
     await refreshGrid()
 })
-</script>
+</script> -->
+<script setup></script>
 <template>
-    <div id="map"></div>
+    <router-view />
+    <!-- <div id="map"></div>
     <button @click="refreshGrid" style="position: absolute; top: 10px; left: 10px; z-index: 1000;">
         🔄 Обновить сетку
-    </button>
+    </button> -->
 </template>
 
 <style>
-#map {
+body, html {
+  margin: 0;
+  padding: 0;
+}
+/* #map {
     width: 100%;
     height: 100vh;
-}
+} */
 </style>
