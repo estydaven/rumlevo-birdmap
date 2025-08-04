@@ -4,6 +4,8 @@ import 'leaflet/dist/leaflet.css'
 import markerIcon from 'leaflet/dist/images/marker-icon.png'
 import markerShadow from 'leaflet/dist/images/marker-shadow.png'
 
+import BurgerMenu from '../components/BurgerMenu.vue';
+
 import { onMounted } from 'vue'
 import { loadFromStore, saveToStore } from '@/db.js'
 
@@ -108,8 +110,8 @@ onMounted(async () => {
 </script>
 
 <template>
-  <router-link to="/">Вернуться на главную</router-link>
-  <button @click="refreshGrid" class="refresh-button">🔄 Обновить сетку</button>
+  <BurgerMenu />
+  <!-- <button @click="refreshGrid" class="refresh-button">🔄 Обновить сетку</button> -->
   <div id="map"></div>
 </template>
 
