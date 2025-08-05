@@ -23,6 +23,7 @@ const route = useRoute();
   bottom: 0;
   width: 480px;
   max-width: 100%;
+  padding: 10px 5px;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 1000;
 }
@@ -31,14 +32,17 @@ const route = useRoute();
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .menu li {
-  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
 }
 
 .menu a {
