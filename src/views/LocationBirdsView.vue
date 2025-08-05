@@ -3,7 +3,6 @@
 </script>
 
 <template>
-    <h1>Главная страница</h1>
-    <router-link to="/map">Перейти к карте</router-link>
+    <h1>Птицы локации</h1>
     <NavMenu />
 </template>
