@@ -1,9 +1,8 @@
 <script setup>
-    import NavMenu from '../components/NavMenu.vue';
+
 </script>
 
 <template>
     <h1>Главная страница</h1>
-    <router-link to="/map">Перейти к карте</router-link>
-    <NavMenu />
+    <router-link to="/map">Начать исследование!</router-link>
 </template>
