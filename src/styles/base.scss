@@ -1,4 +1,4 @@
-@import './variables.scss';
+@use './variables' as *;
 
 /* pt-serif-regular - cyrillic_latin */
 @font-face {
@@ -6,7 +6,7 @@
   font-family: 'PT Serif';
   font-style: normal;
   font-weight: 400;
-  src: url('../../public/fonts/PT-Serif/pt-serif-v18-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/PT-Serif/pt-serif-v18-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* pt-serif-700 - cyrillic_latin */
 @font-face {
@@ -14,7 +14,7 @@
   font-family: 'PT Serif';
   font-style: normal;
   font-weight: 700;
-  src: url('../../public/fonts/PT-Serif/pt-serif-v18-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/PT-Serif/pt-serif-v18-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* manrope-regular - cyrillic_latin */
 @font-face {
@@ -22,7 +22,7 @@
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 400;
-  src: url('../../public/fonts/Manrope/manrope-v19-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/Manrope/manrope-v19-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* manrope-700 - cyrillic_latin */
 @font-face {
@@ -30,7 +30,7 @@
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 700;
-  src: url('../../public/fonts/Manrope/manrope-v19-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/Manrope/manrope-v19-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* rubik-regular - cyrillic_latin */
 @font-face {
@@ -38,7 +38,7 @@
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
-  src: url('../../public/fonts/Rubik/rubik-v30-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/Rubik/rubik-v30-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* rubik-700 - cyrillic_latin */
 @font-face {
@@ -46,7 +46,11 @@
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 700;
-  src: url('../../public/fonts/Rubik/rubik-v30-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('/fonts/Rubik/rubik-v30-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+    box-sizing: border-box;
 }
 
 html, body {
@@ -56,6 +60,7 @@ html, body {
 
 #app {
   margin: 0 auto;
+  padding: 0 10px;
   width: 480px;
   max-width: 100%;
   height: 100%;

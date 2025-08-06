@@ -18,7 +18,6 @@ const route = useRoute();
 </template>
 
 <style scoped lang="scss">
-@import '../styles/variables';
 
 .menu {
   position: fixed;
@@ -49,7 +48,7 @@ const route = useRoute();
   a {
     color: $color-text-light;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 17px;
 
     &:hover {
       color: $color-sunset;
