@@ -17,37 +17,44 @@ const route = useRoute();
     </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@import '../styles/variables';
+
 .menu {
   position: fixed;
   bottom: 0;
   width: 480px;
   max-width: 100%;
   padding: 10px 5px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: $color-forest;
   z-index: 1000;
+
+  ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+
+  a {
+    color: $color-text-light;
+    text-decoration: none;
+    font-size: 20px;
+
+    &:hover {
+      color: $color-sunset;
+    }
+  }
 }
 
-.menu ul {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-around;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.menu li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1;
-}
-
-.menu a {
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-}
 </style>
