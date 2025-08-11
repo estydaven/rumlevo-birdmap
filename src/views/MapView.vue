@@ -115,7 +115,10 @@ onMounted(async () => {
   <NavMenu />
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+#app {
+    padding: 0;
+}
 #map {
   width: 480px;
   height: 100vh;
