@@ -4,6 +4,7 @@ import MapView from '@/views/MapView.vue'
 import LocationBirdsView from '@/views/LocationBirdsView.vue'
 import RumlovaBirdsView from '@/views/RumlovaBirdsView.vue'
 import InfoView from '@/views/InfoView.vue'
+import BirdDetail from '@/views/BirdDetail.vue'
 
 const routes = [
     {path: '/', name: 'home', component: HomeView },
@@ -11,6 +12,7 @@ const routes = [
     {path: '/locationbirds', name: 'locationbirds', component: LocationBirdsView},
     {path: '/rumlovabirds', name: 'rumlovabirds', component: RumlovaBirdsView},
     {path: '/info', name: 'info', component: InfoView},
+    { path: '/bird/:id', name: 'bird-detail', component: BirdDetail, props: true }
 ]
 
 const router = createRouter({

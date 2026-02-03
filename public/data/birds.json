@@ -178,7 +178,7 @@
     "genus": "Tringa",
     "species": "Tringa glareola",
     "status": "LC",
-    "img": "tri_gla.jpg",
+    "img": "tri-gla.jpg",
     "cells": []
   },
   {
@@ -780,7 +780,7 @@
     "genus": "Passer",
     "species": "Passer montanus",
     "status": "LC",
-    "img": "pas_mon.jpg",
+    "img": "pas-mon.jpg",
     "cells": []
   },
   {

@@ -77,14 +77,26 @@ onMounted(async () => {
     attribution: '© OpenStreetMap',
   }).addTo(map)
 
-  map.locate()
+  // map.locate()
+
+  // Запрос геопозиции с высокой точностью
+    map.locate({
+        setView: true,
+        maxZoom: 18,
+        enableHighAccuracy: true,
+        watch: true // Поставьте true, если нужно следить за перемещением
+    });
 
   map.on('locationfound', (e) => {
+    var radius = e.accuracy / 250; // Точность в метрах
+    
     map.setView(e.latlng, 17)
     L.marker(e.latlng, { icon: userIcon })
       .addTo(map)
-      .bindPopup('Вы здесь 🐾')
+      .bindPopup("Вы находитесь в пределах " + radius + " метров от этой точки")
       .openPopup()
+
+    L.circle(e.latlng, radius).addTo(map);
   })
 
   map.on('locationerror', (e) => {

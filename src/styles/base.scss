@@ -56,11 +56,16 @@
 html, body {
   padding: 0;
   height: 100%;
-  overflow: hidden;
+//   overflow: hidden;
 }
 
 a {
     text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }
 
 #app {

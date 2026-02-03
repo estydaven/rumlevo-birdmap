@@ -20,7 +20,8 @@ const route = useRoute();
 <style scoped lang="scss">
 
 .menu {
-  position: absolute;
+//   position: absolute;
+  position: fixed;
   bottom: 0;
   width: 480px;
   max-width: 100%;
