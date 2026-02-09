@@ -132,7 +132,7 @@ onMounted(async () => {
     padding: 0;
 }
 #map {
-  width: 480px;
+  width: 100%;
   height: 100vh;
   position: relative;
 }
