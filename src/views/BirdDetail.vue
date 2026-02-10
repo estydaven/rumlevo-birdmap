@@ -1,11 +1,21 @@
 <script setup>
     import { onMounted } from 'vue';
     import { useRoute } from 'vue-router';
+    import { useRouter } from 'vue-router';
     import { useBirdStore } from '@/stores/birdStore';
 
     const route = useRoute();
+    const router = useRouter();
     const birdStore = useBirdStore();
     const basePath = import.meta.env.BASE_URL;
+
+    function goBack() {
+        if (window.history.length > 1) {
+            router.back();
+        } else {
+            router.push('/rumlovabirds');
+        }
+    }
 
     onMounted(async () => {
         const id = Number(route.params.id);
@@ -36,7 +46,8 @@
     <p>Вид: {{ birdStore.selectedBird.species }}</p>
     <p>Глобальный статус: {{ birdStore.selectedBird.status }}</p>
 
-    <router-link to="/rumlovabirds">← Назад</router-link>
+    <!-- <router-link to="/rumlovabirds">← Назад</router-link> -->
+    <button class="button button_small" @click="goBack()">← Назад</button>
   </div>
 
   <div v-else>

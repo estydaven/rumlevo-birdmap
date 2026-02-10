@@ -21,26 +21,4 @@
     text-align: center;
     margin-bottom: 30px;
 }
-.button {
-    display: block;
-    width: 100%;
-    height: 70px;
-    text-align: center;
-    margin: 0 auto;
-    background-color: $color-sunset;
-    padding: 20px 10px;
-    border-radius: 8px;
-    color: $color-forest;
-    font-weight: 700;
-    font-size: 22px;
-    outline: none;
-    transition: 1s ease-in-out;
-    position: relative;
-    overflow: hidden;
-  
-  &:hover {
-    background-color: $color-forest;
-    color: $color-sunset;
-  }
-}
 </style>

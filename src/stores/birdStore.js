@@ -4,9 +4,10 @@ import { getAllBirds } from '@/services/birdService.js';
 export const useBirdStore = defineStore('birds', {
     state: () => ({
         list: [],
-        selectedBirds: null,
+        selectedBird: null,
         loading: false,
         error: null,
+        openOrder: null,
     }),
 
     actions: {
@@ -22,7 +23,10 @@ export const useBirdStore = defineStore('birds', {
             }
         },
         selectBird(id) {
-            this.selectedBirds = this.list.find(b => b.id === id) || null;
+            this.selectedBird = this.list.find(b => b.id === id) || null;
+        },
+        setOpenOrder(order) {
+            this.openOrder = this.openOrder === order ? null : order
         }
     },
 

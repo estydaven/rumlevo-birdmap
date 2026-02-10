@@ -21,11 +21,20 @@
         <h1>Список птиц парка Румлёво</h1>
         <div v-if="birdStore.loading">Загрузка...</div>
         <div v-if="birdStore.error">Ошибка: {{ birdStore.error }}</div>
-        <div v-if="birdStore.list.length" class="bird-list">
-            <div v-for="bird in birdStore.list" :key="bird.id" @click="goToBird(bird.id)" class="bird-item">
-                <img :src="`${basePath}images_birds/${bird.img}`" :alt="bird.ru" />
-                <h3>{{ bird.ru }}</h3>
-                <p><em>{{ bird.latin }}</em></p>
+        <div v-else>
+            <div v-for="(families, order) in birdStore.birdsByOrderAndFamily" :key="order" class="order-block">
+                <h2 class="order-title" @click="birdStore.setOpenOrder(order)">{{ order }}<span class="arrow">{{ birdStore.openOrder === order ? '▲' : '▼' }}</span></h2>
+                <div v-if="birdStore.openOrder === order">
+                    <div v-for="(birds, family) in families" :key="family" class="family-block">
+                        <h3 class="family-title">{{ family }}</h3>
+                        <div class="bird-list">
+                            <div v-for="bird in birds" :key="bird.id" @click="goToBird(bird.id)" class="bird-item">
+                                <img :src="`${basePath}images_birds/${bird.img}`" :alt="bird.ru" />
+                                <h3>{{ bird.ru }}</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
