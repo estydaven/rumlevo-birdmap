@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "latin": "Anas platyrhynchos",
+    "scientificName": "Anas platyrhynchos",
     "ru": "Кряква",
     "en": "Mallard",
     "be": "Качка-крыжанка",
@@ -15,7 +15,7 @@
   },
   {
     "id": 2,
-    "latin": "Ardea alba",
+    "scientificName": "Ardea alba",
     "ru": "Большая белая цапля",
     "en": "Great Egret",
     "be": "Вялiкая белая чапля",
@@ -29,7 +29,7 @@
   },
   {
     "id": 3,
-    "latin": "Phalacrocorax carbo",
+    "scientificName": "Phalacrocorax carbo",
     "ru": "Большой баклан",
     "en": "Common cormorant",
     "be": "Вялiкi баклан",
@@ -43,7 +43,7 @@
   },
   {
     "id": 4,
-    "latin": "Troglodytes troglodytes",
+    "scientificName": "Troglodytes troglodytes",
     "ru": "Крапивник",
     "en": "Eurasian Wren(Winter Wren)",
     "be": "Крапiўнiк (валавока)",
@@ -57,7 +57,7 @@
   },
   {
     "id": 5,
-    "latin": "Anser albifrons",
+    "scientificName": "Anser albifrons",
     "ru": "Белолобый гусь",
     "en": "White-fronted Goose",
     "be": "Белалобая гусь",
@@ -71,7 +71,7 @@
   },
   {
     "id": 6,
-    "latin": "Cygnus olor",
+    "scientificName": "Cygnus olor",
     "ru": "Лебедь-шипун",
     "en": "Mute Swan",
     "be": "Лебедзь-шыпун",
@@ -85,7 +85,7 @@
   },
   {
     "id": 7,
-    "latin": "Mergus merganser",
+    "scientificName": "Mergus merganser",
     "ru": "Большой крохаль",
     "en": "Goosander",
     "be": "Вялiкi савук",
@@ -99,7 +99,7 @@
   },
   {
     "id": 8,
-    "latin": "Chroicocephalus ridibundus",
+    "scientificName": "Chroicocephalus ridibundus",
     "ru": "Озёрная чайка",
     "en": "Black-headed Gull",
     "be": "Чайка-рыбачка",
@@ -113,7 +113,7 @@
   },
   {
     "id": 9,
-    "latin": "Larus cachinnans",
+    "scientificName": "Larus cachinnans",
     "ru": "Хохотунья",
     "en": "Caspian Gull",
     "be": "Чайка-рагатуха",
@@ -127,7 +127,7 @@
   },
   {
     "id": 10,
-    "latin": "Sterna hirundo",
+    "scientificName": "Sterna hirundo",
     "ru": "Речная крачка",
     "en": "Common Tern",
     "be": "Рачная крычка",
@@ -141,7 +141,7 @@
   },
   {
     "id": 11,
-    "latin": "Motacilla alba",
+    "scientificName": "Motacilla alba",
     "ru": "Белая трясогузка",
     "en": "White(Pied) Wagtail",
     "be": "Белая плiска",
@@ -155,7 +155,7 @@
   },
   {
     "id": 12,
-    "latin": "Bucephala clangula",
+    "scientificName": "Bucephala clangula",
     "ru": "Гоголь",
     "en": "Common Goldeneye",
     "be": "Звычайны гогаль",
@@ -169,7 +169,7 @@
   },
   {
     "id": 13,
-    "latin": "Tringa glareola",
+    "scientificName": "Tringa glareola",
     "ru": "Фифи",
     "en": "Wood Sandpiper",
     "be": "Кулiк-цякун",
@@ -183,7 +183,7 @@
   },
   {
     "id": 14,
-    "latin": "Ardea cinerea",
+    "scientificName": "Ardea cinerea",
     "ru": "Серая цапля",
     "en": "Grey Heron",
     "be": "Шэрая чапля",
@@ -197,7 +197,7 @@
   },
   {
     "id": 15,
-    "latin": "Delichon urbicum",
+    "scientificName": "Delichon urbicum",
     "ru": "Городская ласточка (воронок)",
     "en": "Common House Martin",
     "be": "Гарадская ластаўка",
@@ -211,7 +211,7 @@
   },
   {
     "id": 16,
-    "latin": "Regulus regulus",
+    "scientificName": "Regulus regulus",
     "ru": "Желтоголовый королёк",
     "en": "Goldcrest",
     "be": "Жоўтагаловы каралёк",
@@ -225,7 +225,7 @@
   },
   {
     "id": 17,
-    "latin": "Larus argentatus",
+    "scientificName": "Larus argentatus",
     "ru": "Серебристая чайка",
     "en": "European Herring Gull",
     "be": "Чайка-клыгун",
@@ -239,7 +239,7 @@
   },
   {
     "id": 18,
-    "latin": "Actitis hypoleucos",
+    "scientificName": "Actitis hypoleucos",
     "ru": "Перевозчик",
     "en": "Common Sandpiper",
     "be": "Кулiк-перавозчык",
@@ -253,7 +253,7 @@
   },
   {
     "id": 19,
-    "latin": "Apus apus",
+    "scientificName": "Apus apus",
     "ru": "Чёрный стриж",
     "en": "Common Swift",
     "be": "Чорны свiргуль",
@@ -267,7 +267,7 @@
   },
   {
     "id": 20,
-    "latin": "Corvus cornix",
+    "scientificName": "Corvus cornix",
     "ru": "Серая ворона",
     "en": "Hooded Crow",
     "be": "Шэрая варона",
@@ -281,7 +281,7 @@
   },
   {
     "id": 21,
-    "latin": "Luscinia luscinia",
+    "scientificName": "Luscinia luscinia",
     "ru": "Обыкновенный соловей",
     "en": "Thrush Nightingale",
     "be": "Усходнi салавей",
@@ -295,7 +295,7 @@
   },
   {
     "id": 22,
-    "latin": "Hirundo rustica",
+    "scientificName": "Hirundo rustica",
     "ru": "Деревенская ласточка",
     "en": "Barn Swallow",
     "be": "Вясковая ластаўка",
@@ -309,7 +309,7 @@
   },
   {
     "id": 23,
-    "latin": "Emberiza schoeniclus",
+    "scientificName": "Emberiza schoeniclus",
     "ru": "Тростниковая овсянка",
     "en": "Common Reed Bunting",
     "be": "Стрынатка-чаротаўка",
@@ -323,7 +323,7 @@
   },
   {
     "id": 24,
-    "latin": "Alcedo atthis",
+    "scientificName": "Alcedo atthis",
     "ru": "Зимородок",
     "en": "Common Kingfisher",
     "be": "Звычайны зiмародак",
@@ -337,7 +337,7 @@
   },
   {
     "id": 25,
-    "latin": "Acrocephalus palustris",
+    "scientificName": "Acrocephalus palustris",
     "ru": "Болотная камышевка",
     "en": "Marsh Warbler",
     "be": "Балотная чаротаўка",
@@ -351,7 +351,7 @@
   },
   {
     "id": 26,
-    "latin": "Spinus spinus",
+    "scientificName": "Spinus spinus",
     "ru": "Чиж",
     "en": "Eurasian Siskin",
     "be": "Чыж",
@@ -365,7 +365,7 @@
   },
   {
     "id": 27,
-    "latin": "Columba palumbus",
+    "scientificName": "Columba palumbus",
     "ru": "Вяхирь",
     "en": "Common Wood Pigeon",
     "be": "Вялiкi голуб",
@@ -379,7 +379,7 @@
   },
   {
     "id": 28,
-    "latin": "Parus major",
+    "scientificName": "Parus major",
     "ru": "Большая синица",
     "en": "Great Tit",
     "be": "Вялiкая сiнiца",
@@ -393,7 +393,7 @@
   },
   {
     "id": 29,
-    "latin": "Sturnus vulgaris",
+    "scientificName": "Sturnus vulgaris",
     "ru": "Обыкновенный скворец",
     "en": "Common Starling",
     "be": "Звычайны шпак",
@@ -407,7 +407,7 @@
   },
   {
     "id": 30,
-    "latin": "Turdus philomelos",
+    "scientificName": "Turdus philomelos",
     "ru": "Певчий дрозд",
     "en": "Song Thrush",
     "be": "Дрозд-спявун",
@@ -421,7 +421,7 @@
   },
   {
     "id": 31,
-    "latin": "Turdus merula",
+    "scientificName": "Turdus merula",
     "ru": "Чёрный дрозд",
     "en": "Common Blackbird",
     "be": "Чорны дрозд",
@@ -435,7 +435,7 @@
   },
   {
     "id": 32,
-    "latin": "Turdus pilaris",
+    "scientificName": "Turdus pilaris",
     "ru": "Рябинник",
     "en": "Fieldfare",
     "be": "Дрозд-пiскун",
@@ -449,7 +449,7 @@
   },
   {
     "id": 33,
-    "latin": "Fringilla coelebs",
+    "scientificName": "Fringilla coelebs",
     "ru": "Зяблик",
     "en": "Common Chaffinch",
     "be": "Берасцянка",
@@ -463,7 +463,7 @@
   },
   {
     "id": 34,
-    "latin": "Chloris chloris",
+    "scientificName": "Chloris chloris",
     "ru": "Обыкновенная зеленушка",
     "en": "European Greenfinch",
     "be": "Звычайная зелянушка",
@@ -477,7 +477,7 @@
   },
   {
     "id": 35,
-    "latin": "Ciconia ciconia",
+    "scientificName": "Ciconia ciconia",
     "ru": "Белый аист",
     "en": "White Stork",
     "be": "Белы бусел",
@@ -491,7 +491,7 @@
   },
   {
     "id": 36,
-    "latin": "Dendrocopos major",
+    "scientificName": "Dendrocopos major",
     "ru": "Большой пёстрый дятел",
     "en": "Great Spotted Woodpecker",
     "be": "Вялiкi дзяцел",
@@ -505,7 +505,7 @@
   },
   {
     "id": 37,
-    "latin": "Corvus frugilegus",
+    "scientificName": "Corvus frugilegus",
     "ru": "Грач",
     "en": "Rook",
     "be": "Грак",
@@ -519,7 +519,7 @@
   },
   {
     "id": 38,
-    "latin": "Cyanistes caeruleus",
+    "scientificName": "Cyanistes caeruleus",
     "ru": "Лазоревка",
     "en": "Eurasian Blue Tit",
     "be": "Сiняя сiнiца",
@@ -533,7 +533,7 @@
   },
   {
     "id": 39,
-    "latin": "Sitta europaea",
+    "scientificName": "Sitta europaea",
     "ru": "Обыкновенный поползень",
     "en": "Common Nuthatch",
     "be": "Папаўзень звычайны",
@@ -547,7 +547,7 @@
   },
   {
     "id": 40,
-    "latin": "Garrulus glandarius",
+    "scientificName": "Garrulus glandarius",
     "ru": "Сойка",
     "en": "Eurasian Jay",
     "be": "Сойка",
@@ -561,7 +561,7 @@
   },
   {
     "id": 41,
-    "latin": "Phylloscopus collybita",
+    "scientificName": "Phylloscopus collybita",
     "ru": "Пеночка-теньковка",
     "en": "Common Chiffchaff",
     "be": "Пячураўка-ценькаўка",
@@ -575,7 +575,7 @@
   },
   {
     "id": 42,
-    "latin": "Certhia familiaris",
+    "scientificName": "Certhia familiaris",
     "ru": "Обыкновенная пищуха",
     "en": "Eurasian Treecreeper",
     "be": "Звычайны паўзунок",
@@ -589,7 +589,7 @@
   },
   {
     "id": 43,
-    "latin": "Poecile palustris",
+    "scientificName": "Poecile palustris",
     "ru": "Черноголовая гаичка",
     "en": "Marsh Tit",
     "be": "Сiвая сiнiца",
@@ -603,7 +603,7 @@
   },
   {
     "id": 44,
-    "latin": "Accipiter nisus",
+    "scientificName": "Accipiter nisus",
     "ru": "Перепелятник",
     "en": "Eurasian Sparrowhawk",
     "be": "Шуляк-карагольчык",
@@ -617,7 +617,7 @@
   },
   {
     "id": 45,
-    "latin": "Ficedula hypoleuca",
+    "scientificName": "Ficedula hypoleuca",
     "ru": "Мухоловка-пеструшка",
     "en": "European Pied Flycatcher",
     "be": "Пярэстая валасянiца",
@@ -631,7 +631,7 @@
   },
   {
     "id": 46,
-    "latin": "Serinus serinus",
+    "scientificName": "Serinus serinus",
     "ru": "Канареечный (европейский) вьюрок",
     "en": "European Serin",
     "be": "Еўрапейскi юрок",
@@ -645,7 +645,7 @@
   },
   {
     "id": 47,
-    "latin": "Erithacus rubecula",
+    "scientificName": "Erithacus rubecula",
     "ru": "Зарянка",
     "en": "European Robin",
     "be": "Малiнаўка",
@@ -659,7 +659,7 @@
   },
   {
     "id": 48,
-    "latin": "Dryobates minor",
+    "scientificName": "Dryobates minor",
     "ru": "Малый пёстрый дятел",
     "en": "Lesser Spotted Woodpecker",
     "be": "Малы дзяцел",
@@ -673,7 +673,7 @@
   },
   {
     "id": 49,
-    "latin": "Phoenicurus phoenicurus",
+    "scientificName": "Phoenicurus phoenicurus",
     "ru": "Обыкновенная горихвостка",
     "en": "Common Redstart",
     "be": "Звычайная рудахвостка",
@@ -687,7 +687,7 @@
   },
   {
     "id": 50,
-    "latin": "Curruca curruca",
+    "scientificName": "Curruca curruca",
     "ru": "Славка-завирушка",
     "en": "Lesser Whitethroat",
     "be": "Леска-завiрушка",
@@ -701,7 +701,7 @@
   },
   {
     "id": 51,
-    "latin": "Accipiter gentilis",
+    "scientificName": "Accipiter gentilis",
     "ru": "Тетеревятник",
     "en": "Northern Goshawk (Eurasian)",
     "be": "Шуляк-галубятнiк",
@@ -715,7 +715,7 @@
   },
   {
     "id": 52,
-    "latin": "Coloeus monedula",
+    "scientificName": "Coloeus monedula",
     "ru": "Галка",
     "en": "Western Jackdaw",
     "be": "Каўка",
@@ -729,7 +729,7 @@
   },
   {
     "id": 53,
-    "latin": "Picus canus",
+    "scientificName": "Picus canus",
     "ru": "Седой дятел",
     "en": "Grey-headed Woodpecker",
     "be": "Сiвая жаўна",
@@ -743,7 +743,7 @@
   },
   {
     "id": 54,
-    "latin": "Columba livia",
+    "scientificName": "Columba livia",
     "ru": "Сизый голубь",
     "en": "Feral Rock Pigeon",
     "be": "Голуб шызы",
@@ -757,7 +757,7 @@
   },
   {
     "id": 55,
-    "latin": "Passer domesticus",
+    "scientificName": "Passer domesticus",
     "ru": "Домовый воробей",
     "en": "House Sparrow",
     "be": "Дамавы верабей",
@@ -771,7 +771,7 @@
   },
   {
     "id": 56,
-    "latin": "Passer montanus",
+    "scientificName": "Passer montanus",
     "ru": "Полевой воробей",
     "en": "Eurasian Tree Sparrow",
     "be": "Палявы верабей",
@@ -785,7 +785,7 @@
   },
   {
     "id": 57,
-    "latin": "Pyrrhula pyrrhula",
+    "scientificName": "Pyrrhula pyrrhula",
     "ru": "Снегирь",
     "en": "Eurasian Bullfinch",
     "be": "Гiль звычайны",
@@ -799,7 +799,7 @@
   },
   {
     "id": 58,
-    "latin": "Carduelis carduelis",
+    "scientificName": "Carduelis carduelis",
     "ru": "Щегол",
     "en": "Common Goldfinch",
     "be": "Чорнагаловы шчыгел",
@@ -813,7 +813,7 @@
   },
   {
     "id": 59,
-    "latin": "Dendrocoptes medius",
+    "scientificName": "Dendrocoptes medius",
     "ru": "Средний пёстрый дятел",
     "en": "Middle Spotted Woodpecker",
     "be": "Cярэднi дзяцел",
@@ -827,7 +827,7 @@
   },
   {
     "id": 60,
-    "latin": "Sylvia atricapilla",
+    "scientificName": "Sylvia atricapilla",
     "ru": "Черноголовая славка",
     "en": "Eurasian Blackcap",
     "be": "Леска-чорнагалоўка",
@@ -841,7 +841,7 @@
   },
   {
     "id": 61,
-    "latin": "Phoenicurus ochruros",
+    "scientificName": "Phoenicurus ochruros",
     "ru": "Горихвостка-чернушка",
     "en": "Black Redstart",
     "be": "Рудахвостка-чарнушка",
@@ -855,7 +855,7 @@
   },
   {
     "id": 62,
-    "latin": "Hippolais icterina",
+    "scientificName": "Hippolais icterina",
     "ru": "Зелёная пересмешка",
     "en": "Icterine Warbler",
     "be": "Зялёная перасмешка",
@@ -869,7 +869,7 @@
   },
   {
     "id": 63,
-    "latin": "Coccothraustes coccothraustes",
+    "scientificName": "Coccothraustes coccothraustes",
     "ru": "Обыкновенный дубонос",
     "en": "Hawfinch",
     "be": "Звычайны таўстадзюб",
@@ -883,7 +883,7 @@
   },
   {
     "id": 64,
-    "latin": "Phylloscopus sibilatrix",
+    "scientificName": "Phylloscopus sibilatrix",
     "ru": "Пеночка-трещотка",
     "en": "Wood Warbler",
     "be": "Пячураўка-трашчолка",
@@ -897,7 +897,7 @@
   },
   {
     "id": 65,
-    "latin": "Corvus corax",
+    "scientificName": "Corvus corax",
     "ru": "Ворон",
     "en": "Common Raven",
     "be": "Крумкач",
@@ -911,7 +911,7 @@
   },
   {
     "id": 66,
-    "latin": "Emberiza citrinella",
+    "scientificName": "Emberiza citrinella",
     "ru": "Обыкновенная овсянка",
     "en": "Yellowhammer",
     "be": "Стрынатка звычайная",
@@ -925,7 +925,7 @@
   },
   {
     "id": 67,
-    "latin": "Dryocopus martius",
+    "scientificName": "Dryocopus martius",
     "ru": "Желна",
     "en": "Black Woodpecker",
     "be": "Чорная жаўна",
@@ -939,7 +939,7 @@
   },
   {
     "id": 68,
-    "latin": "Phylloscopus trochilus",
+    "scientificName": "Phylloscopus trochilus",
     "ru": "Пеночка-весничка",
     "en": "Willow Warbler",
     "be": "Пячураўка-будаўнiчок",
@@ -953,7 +953,7 @@
   },
   {
     "id": 69,
-    "latin": "Cuculus canorus",
+    "scientificName": "Cuculus canorus",
     "ru": "Кукушка",
     "en": "Common Cuckoo",
     "be": "Зязюля звычайная",
@@ -967,7 +967,7 @@
   },
   {
     "id": 70,
-    "latin": "Muscicapa striata",
+    "scientificName": "Muscicapa striata",
     "ru": "Серая мухоловка",
     "en": "Spotted Flycatcher",
     "be": "Шэрая валасянiца",
@@ -981,7 +981,7 @@
   },
   {
     "id": 71,
-    "latin": "Aegolius funereus",
+    "scientificName": "Aegolius funereus",
     "ru": "Мохноногий сыч",
     "en": "Tengmalm's Owl(Boreal Owl)",
     "be": "Касматаногi сыч",
@@ -995,7 +995,7 @@
   },
   {
     "id": 72,
-    "latin": "Buteo buteo",
+    "scientificName": "Buteo buteo",
     "ru": "Канюк",
     "en": "Common Buzzard",
     "be": "Канюх-мышалоў",
@@ -1009,7 +1009,7 @@
   },
   {
     "id": 73,
-    "latin": "Aegithalos caudatus",
+    "scientificName": "Aegithalos caudatus",
     "ru": "Длиннохвостая синица (ополовник)",
     "en": "Long-tailed Tit",
     "be": "Ciнiца-апалоўнiк",
@@ -1023,7 +1023,7 @@
   },
   {
     "id": 74,
-    "latin": "Lophophanes cristatus",
+    "scientificName": "Lophophanes cristatus",
     "ru": "Хохлатая синица",
     "en": "Crested Tit",
     "be": "Чубатая сiнiца",
@@ -1037,7 +1037,7 @@
   },
   {
     "id": 75,
-    "latin": "Alauda arvensis",
+    "scientificName": "Alauda arvensis",
     "ru": "Полевой жаворонок",
     "en": "Common Skylark",
     "be": "Палявы жаўрук",
@@ -1051,7 +1051,7 @@
   },
   {
     "id": 76,
-    "latin": "Linaria cannabina",
+    "scientificName": "Linaria cannabina",
     "ru": "Коноплянка",
     "en": "Common Linnet",
     "be": "Канаплянка",
@@ -1065,7 +1065,7 @@
   },
   {
     "id": 77,
-    "latin": "Lanius collurio",
+    "scientificName": "Lanius collurio",
     "ru": "Обыкновенный жулан",
     "en": "Red-backed Shrike",
     "be": "Малы грычун",
@@ -1079,7 +1079,7 @@
   },
     {
     "id": 78,
-    "latin": "Tachybaptus ruficollis",
+    "scientificName": "Tachybaptus ruficollis",
     "ru": "Малая поганка",
     "en": "Little Grebe",
     "be": "Малая коўра",
