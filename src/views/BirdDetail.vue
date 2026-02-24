@@ -30,7 +30,7 @@
   <div v-else-if="birdStore.error">Ошибка: {{ birdStore.error }}</div>
   <div v-if="birdStore.selectedBird" class="bird-details">
     <h1>{{ birdStore.selectedBird.ru }}</h1>
-    <h2><em>{{ birdStore.selectedBird.latin }}</em></h2>
+    <h2><em>{{ birdStore.selectedBird.scientificName }}</em></h2>
     <h3><em>{{ birdStore.selectedBird.en }}</em></h3>
     <h4><em>{{ birdStore.selectedBird.be }}</em></h4>
 

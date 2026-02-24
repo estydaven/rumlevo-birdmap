@@ -1,5 +1,21 @@
 import { defineStore } from 'pinia';
 import { getAllBirds } from '@/services/birdService.js';
+import taxonomyMap from "@/assets/data/taxonomy_order.json";
+
+function getMinTaxonOrder(families) {
+    let min = 999999
+
+    Object.values(families).forEach(birds => {
+        birds.forEach(bird => {
+            const taxOrder = taxonomyMap[bird.scientificName]
+            if (taxOrder && taxOrder < min) {
+                min = taxOrder
+            }
+        })
+    })
+
+    return min
+}
 
 export const useBirdStore = defineStore('birds', {
     state: () => ({
@@ -32,20 +48,48 @@ export const useBirdStore = defineStore('birds', {
 
     getters: {
         birdsByOrderAndFamily: (state) => {
+            const grouped = {}
+
+            // 1️⃣ Группируем
+            state.list.forEach(bird => {
+                const order = bird.order || "Unknown"
+                const family = bird.family || "Unknown"
+                // Отряд
+                if (!grouped[order]) {
+                    grouped[order] = {}
+                }
+
+                // Семейство
+                if (!grouped[order][family]) {
+                    grouped[order][family] = []
+                }
+
+                grouped[order][family].push(bird)
+            })
+
+            // 2️⃣ Сортируем виды внутри семейств
+            Object.values(grouped).forEach(families => {
+                Object.values(families).forEach(birds => {
+                    birds.sort((a, b) => {
+                        const orderA = taxonomyMap[a.scientificName] ?? 999999
+                        const orderB = taxonomyMap[b.scientificName] ?? 999999
+                        return orderA - orderB
+                    })
+                })
+            })
+
+            // 3️⃣ Сортируем отряды по минимальному taxonOrder внутри них
+            const sortedOrders = Object.keys(grouped).sort((a, b) => {
+                const minA = getMinTaxonOrder(grouped[a])
+                const minB = getMinTaxonOrder(grouped[b])
+                return minA - minB
+            })
+
+            // 4️⃣ Собираем итоговый объект в правильном порядке
             const result = {}
 
-            state.list.forEach(bird => {
-            // Отряд
-            if (!result[bird.order]) {
-                result[bird.order] = {}
-            }
-
-            // Семейство
-            if (!result[bird.order][bird.family]) {
-                result[bird.order][bird.family] = []
-            }
-
-            result[bird.order][bird.family].push(bird)
+            sortedOrders.forEach(order => {
+                result[order] = grouped[order]
             })
 
             return result
