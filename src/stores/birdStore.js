@@ -112,36 +112,5 @@ export const useBirdStore = defineStore('birds', {
 
             return result
         },
-        // Цвета для списка птиц
-        birdColorsBySeason: (state) => {
-            const map = {};
-            state.list.forEach(bird => {
-                map[Number(bird.id)] = {};
-                ["winter", "spring", "summer", "autumn"].forEach(season => {
-                // Находим данные по birdId и сезону
-                const data = birdSeasonData.find(
-                    s => Number(s.birdId) === Number(bird.id) && s.season === season
-                );
-
-                // Если данных нет — серый
-                map[bird.id][season] = data ? getFrequencyColor(data.frequency) : "#ccc";
-                });
-            });
-            return map;
-        },
-        // Для карточки: возвращаем сразу объект с частотами для ширины полосок
-        birdFrequencyBySeason: (state) => {
-        const map = {};
-        state.list.forEach(bird => {
-            map[Number(bird.id)] = {};
-            ["winter", "spring", "summer", "autumn"].forEach(season => {
-            const data = birdSeasonData.find(
-                s => Number(s.birdId) === Number(bird.id) && s.season === season
-            );
-            map[bird.id][season] = data ? data.frequency : 0;
-            });
-        });
-        return map;
-        }
     }
 })
