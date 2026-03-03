@@ -107,12 +107,12 @@ onMounted(async () => {
 
   if (!birdData) {
     try {
-      const res = await fetch(import.meta.env.BASE_URL + 'bird-probabilities.json?v=' + Date.now())
+      const res = await fetch(import.meta.env.BASE_URL + 'rumlevo-grid.geojson?v=' + Date.now())
       birdData = await res.json()
       await saveToStore('birds', 'bird-probs', birdData)
       console.log('Сохранили birdData в IndexedDB:', birdData)
     } catch (error) {
-      console.error('Не удалось загрузить bird-probabilities.json:', error)
+      console.error('Не удалось загрузить rumlevo-grid.geojson:', error)
       birdData = {}
     }
   }

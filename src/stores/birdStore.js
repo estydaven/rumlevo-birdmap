@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia';
 import { getAllBirds } from '@/services/birdService.js';
 import taxonomyMap from "@/assets/data/taxonomy_order.json";
+import birdSeasonData from "@/assets/data/birdSeasonData.js";
 
 function getMinTaxonOrder(families) {
     let min = 999999
@@ -17,6 +18,17 @@ function getMinTaxonOrder(families) {
     return min
 }
 
+function getFrequencyColor(frequency) {
+  // Если частоты нет — серый
+  if (frequency == null) return "#ccc";
+  const green = [0, 200, 0];
+  const red = [200, 0, 0];
+  const r = Math.round(red[0] * frequency + green[0] * (1 - frequency));
+  const g = Math.round(red[1] * frequency + green[1] * (1 - frequency));
+  const b = Math.round(red[2] * frequency + green[2] * (1 - frequency));
+  return `rgb(${r},${g},${b})`;
+}
+
 export const useBirdStore = defineStore('birds', {
     state: () => ({
         list: [],
@@ -24,6 +36,7 @@ export const useBirdStore = defineStore('birds', {
         loading: false,
         error: null,
         openOrder: null,
+        openFamilyKey: null,
     }),
 
     actions: {
@@ -42,7 +55,12 @@ export const useBirdStore = defineStore('birds', {
             this.selectedBird = this.list.find(b => b.id === id) || null;
         },
         setOpenOrder(order) {
-            this.openOrder = this.openOrder === order ? null : order
+            this.openFamilyKey = null;
+            this.openOrder = this.openOrder === order ? null : order;
+        },
+        setOpenFamily(order, family) {
+            const key = `${order}_${family}`;
+            this.openFamilyKey = this.openFamilyKey === key ? null : key;
         }
     },
 
@@ -93,6 +111,37 @@ export const useBirdStore = defineStore('birds', {
             })
 
             return result
+        },
+        // Цвета для списка птиц
+        birdColorsBySeason: (state) => {
+            const map = {};
+            state.list.forEach(bird => {
+                map[Number(bird.id)] = {};
+                ["winter", "spring", "summer", "autumn"].forEach(season => {
+                // Находим данные по birdId и сезону
+                const data = birdSeasonData.find(
+                    s => Number(s.birdId) === Number(bird.id) && s.season === season
+                );
+
+                // Если данных нет — серый
+                map[bird.id][season] = data ? getFrequencyColor(data.frequency) : "#ccc";
+                });
+            });
+            return map;
+        },
+        // Для карточки: возвращаем сразу объект с частотами для ширины полосок
+        birdFrequencyBySeason: (state) => {
+        const map = {};
+        state.list.forEach(bird => {
+            map[Number(bird.id)] = {};
+            ["winter", "spring", "summer", "autumn"].forEach(season => {
+            const data = birdSeasonData.find(
+                s => Number(s.birdId) === Number(bird.id) && s.season === season
+            );
+            map[bird.id][season] = data ? data.frequency : 0;
+            });
+        });
+        return map;
         }
     }
 })
